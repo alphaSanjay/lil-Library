@@ -1,0 +1,63 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="bookobj.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+
+        <div class="menu">
+            <h1 class="logo">Lil.Library</h1>
+            <button class="primary-button" id="new-book">Add book +</button>
+        </div>
+
+        <dialog class="book-dialog">
+
+            <h1>New entry</h1>
+
+            <form class="form-container">
+                <div class="input">
+                    <label for="title">Title:</label>
+                    <input type="text" id="title" name="title" autofocus required>
+                </div>
+    
+                <div class="input">
+                    <label for="author">Author:</label>
+                    <input type="text" id="author" name="author" required>
+                </div>
+    
+                <div class="input">
+                    <label for="pages">Page Count:</label>
+                    <input type="number" id="pages" name="pages" required>
+                </div>
+    
+                <fieldset class="read-container">
+                    <legend>Have You read this book?</legend>
+                    <div>
+                        <input type="radio" id="read" name="read" value="read">
+                        <label for="read">Yes</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" id="not-read" name="read" value="not-read">
+                        <label for="not-read">No</label>
+                    </div>
+                </fieldset>
+    
+                <div class="form-buttons">
+                    <button class="primary-button" id="close-button">Cancel</button>
+                    <button class="primary-button" id="submit-button" type="submit">Submit</button>
+                </div>
+            </form>
+        </dialog>
+    </div>
+
+    <div id="main-area">  
+    </div>
+
+</body>
+</html>
